@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <!--toolbar color-->
+    <color name="colorPrimary">#1b434d</color>
+    <!-- status_bar color-->
+    <color name="colorPrimaryDark">#1b434d</color>
+    <color name="colorAccent">#1b434d</color>
+
+    <color name="gradientStart">#1D3B67</color>
+    <color name="pagebg">#F9F9F9</color>
+
+    <color name="background">#F9F9F9</color>
+    <color name="primary">#150B3D</color>
+    <color name="secondary">#514B6B</color>
+    <color name="hint">#524B6B</color>
+    <color name="blue">#1D3461</color>
+    <color name="grey">#B3B4B5</color>
+    <color name="textTrans">#222E50</color>
+
+    <color name="blue_dark">#1D3B67</color>
+    <color name="blue_light">#237298</color>
+    <color name="green">#00CF2E</color>
+    <color name="light_grey">#757575</color>
+    <color name="tab_light_red">#F84B55</color>
+
+    <color name="red_dark">#BC0000</color>
+    <color name="dark_grey">#5B5858</color>
+    <color name="switchStrokeSelected">#11B803</color>
+</resources>

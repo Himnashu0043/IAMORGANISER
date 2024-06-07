@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/CustomBottomSheetStyle</item>
+    </style>
+
+    <style name="CustomBottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+<!--       // <item name="behavior_peekHeight">1200dp</item>-->
+    </style>
+    <style name="MainImUi" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="_boldS_16">
+        <item name="fontFamily">@font/satoshi_bold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="_boldS_13">
+        <item name="fontFamily">@font/satoshi_bold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="_boldS_14">
+        <item name="fontFamily">@font/inter_semibold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+
+    <style name="_regularS_13">
+        <item name="fontFamily">@font/satoshi_regular</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+    <style name="_regularS_14">
+        <item name="fontFamily">@font/satoshi_regular</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="_bold_S_14">
+        <item name="fontFamily">@font/satoshi_bold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="spinnerDropDownItemStyle" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
+        <item name="android:textSize">@dimen/dimen12</item>
+        <item name="android:fontFamily">@font/satoshi_regular</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:padding">5dp</item>
+
+    </style>
+
+    <style name="_regularS_12">
+        <item name="fontFamily">@font/satoshi_regular</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="_BoldS_12">
+        <item name="fontFamily">@font/satoshi_bold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="_regular_24">
+        <item name="fontFamily">@font/playfair_display_black</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="display_black_900_24sp_black">
+        <item name="fontFamily">@font/playfair_display_black</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="satoshi_regular_400_12sp_primary">
+        <item name="fontFamily">@font/satoshi_regular</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/primary</item>
+    </style>
+    <style name="ShapeAppearanceOverlay.App.CornerSize50Percent" parent="">
+        <item name="cornerSize">50%</item>
+    </style>
+
+
+    <style name="service_10_imge_shapeable_overloay">
+        <item name="cornerSize">10%</item>
+        <item name="cornerSizeTopLeft">10%</item>
+        <item name="cornerSizeTopRight">10%</item>
+    </style>
+</resources>

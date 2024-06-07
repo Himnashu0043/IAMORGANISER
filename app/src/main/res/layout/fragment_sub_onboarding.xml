@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue_gradient">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/dimen50"
+        android:src="@drawable/onboarding_image"
+        app:layout_constraintBottom_toBottomOf="@id/midGuide"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/verticalBarEnd"
+        android:layout_width="@dimen/dimen18"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/midGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <ImageView
+        android:id="@+id/ivImage"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/rlCurve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/intro_button_back"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:paddingVertical="@dimen/dimen4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/verticalBarEnd"
+        app:layout_constraintTop_toBottomOf="@id/midGuide">
+
+        <ImageButton
+            android:id="@+id/btnNext"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dimen12"
+            android:background="@drawable/onbaording_button_selector"
+            android:src="@drawable/right_arrow" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen32"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/midGuide">
+
+        <TextView
+            android:id="@+id/tvHeading"
+            style="@style/display_black_900_24sp_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I'M Service\nProvider"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tvDescription"
+            style="@style/satoshi_regular_400_12sp_primary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:text="Lorem ipsum dolor sit amet, consectetur\nadipiscing elit. Amet ut nec vitae gravida\nullamcorper ."
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen32"
+        android:layout_marginTop="@dimen/dimen12"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/llContent">
+
+        <ImageView
+            android:id="@+id/ivFirst"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:background="@drawable/indicator_filled_white" />
+
+        <ImageView
+            android:id="@+id/ivSecond"
+            android:layout_width="8dp"
+            android:background="@drawable/indicator_white_stroke"
+            android:layout_height="8dp"
+            android:layout_marginHorizontal="5dp" />
+
+        <ImageView
+            android:id="@+id/ivThird"
+            android:background="@drawable/indicator_white_stroke"
+            android:layout_width="8dp"
+            android:layout_height="8dp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

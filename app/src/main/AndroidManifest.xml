@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <application
+        android:name=".util.App"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/applogo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/applogo"
+        android:supportsRtl="true"
+        android:theme="@style/MainImUi"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".activity.playVideo.PlayVideoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.scan.ScanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.common.HelpSupportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.common.AboutUsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.common.PrivacyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.common.TermConditionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.notification.NotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.setting.SettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.updatePassword.UpdatePasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.onBoarding.OnBoardingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.booking.BookingConfrimActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.eventDetail.EventDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.cong.CongratulationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.cong.CongratulationNotiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.profile.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.splash.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.auth.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.auth.ResetPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.auth.EnterOtpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.auth.CongoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.auth.ForgotPassword"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

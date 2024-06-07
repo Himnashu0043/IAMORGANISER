@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+   android:layout_marginBottom="20dp"
+    tools:context=".activity.auth.EnterOtpActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:id="@+id/enterMain"
+       >
+
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen76"
+            android:contentDescription="Logo"
+            android:src="@drawable/ic_forgot_password"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvWelcomeBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/_regular_24"
+            android:layout_marginTop="@dimen/dimen20"
+            android:gravity="center"
+            android:text="Enter OTP"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivLogo" />
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen6"
+            android:fontFamily="@font/satoshi_regular"
+            android:text="OTP has been sent to your Email address"
+            android:textAlignment="center"
+            android:textColor="@color/secondary"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvWelcomeBack" />
+
+        <TextView
+            android:id="@+id/tvEmail1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen6"
+            android:fontFamily="@font/satoshi_regular"
+            android:text="harry123@gmail.com"
+            android:textAlignment="center"
+            android:textColor="@color/secondary"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvDescription" />
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/satoshi_regular"
+            android:text="OTP"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvEmail1" />
+
+        <TextView
+            android:id="@+id/tvEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/satoshi_regular"
+            android:text="Edit"
+            android:layout_marginStart="3dp"
+            android:textColor="@color/gradientStart"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/tvEmail1"
+            app:layout_constraintStart_toEndOf="@+id/tvEmail1"
+            app:layout_constraintTop_toTopOf="@+id/tvEmail1" />
+
+        <com.chaos.view.PinView
+            style="@style/PinWidget.PinView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:cursorVisible="true"
+            android:elevation="10dp"
+            android:inputType="number"
+            android:itemBackground="@drawable/white_10"
+            android:padding="3dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            app:cursorWidth="2dp"
+            app:hideLineWhenFilled="true"
+            app:itemCount="6"
+            app:itemHeight="45dp"
+            app:itemRadius="4dp"
+            app:itemSpacing="12dp"
+            android:visibility="gone"
+            app:itemWidth="50dp"
+            app:layout_constraintEnd_toEndOf="@+id/tvEmail"
+            app:layout_constraintStart_toStartOf="@+id/tvEmail"
+            app:layout_constraintTop_toBottomOf="@id/tvEmail"
+            app:lineWidth="1dp"
+            app:viewType="rectangle" />
+        <LinearLayout
+            android:id="@+id/otp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvEmail">
+
+
+            <EditText
+                android:id="@+id/etOne"
+                android:layout_width="0dp"
+                android:fontFamily="@font/satoshi_regular"
+                android:textSize="15sp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_selector"
+                android:digits="0123456789"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColorHint="#85919A" />
+
+            <EditText
+                android:id="@+id/etTwo"
+                android:fontFamily="@font/satoshi_regular"
+                android:textSize="15sp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_selector"
+                android:digits="0123456789"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColorHint="#85919A" />
+
+            <EditText
+                android:id="@+id/etThree"
+                android:fontFamily="@font/satoshi_regular"
+                android:textSize="15sp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_selector"
+                android:digits="0123456789"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColorHint="#85919A" />
+
+            <EditText
+                android:id="@+id/etFour"
+                android:fontFamily="@font/satoshi_regular"
+                android:textSize="15sp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_selector"
+                android:digits="0123456789"
+                android:gravity="center"
+                android:inputType="number"
+                android:layout_marginEnd="4dp"
+                android:maxLength="1"
+                android:textColorHint="#85919A" />
+            <EditText
+                android:id="@+id/etfive"
+                android:fontFamily="@font/satoshi_regular"
+                android:textSize="15sp"
+                android:layout_width="0dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="8dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_selector"
+                android:digits="0123456789"
+                android:gravity="center"
+
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColorHint="#85919A" />
+            <EditText
+                android:id="@+id/etsix"
+                android:fontFamily="@font/satoshi_regular"
+                android:textSize="15sp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_selector"
+                android:digits="0123456789"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColorHint="#85919A" />
+
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSubmitOTP"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen44"
+            android:background="@drawable/blue_gradient_15"
+            android:text="Submit OTP"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/tvEmail"
+            app:layout_constraintStart_toStartOf="@+id/tvEmail"
+            app:layout_constraintTop_toBottomOf="@+id/otp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="@dimen/dimen16"
+            android:background="@drawable/white_15"
+            android:gravity="center"
+            android:text="Resend"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/btnSubmitOTP"
+            app:layout_constraintStart_toStartOf="@+id/btnSubmitOTP"
+            app:layout_constraintTop_toBottomOf="@+id/btnSubmitOTP" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

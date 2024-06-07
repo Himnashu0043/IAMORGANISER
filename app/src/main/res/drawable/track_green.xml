@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+   <!-- <item android:state_checked="true">
+        <shape android:shape="rectangle">
+            <size android:width="36dp" android:height="20dp" />
+            <solid android:width="1dp" android:color="@color/switchStrokeSelected" />
+            <corners android:radius="50dp" />
+        </shape>
+    </item>
+
+    <item android:state_checked="false">
+        <shape android:shape="rectangle">
+            <size android:width="36dp" android:height="20dp" />
+            <solid android:width="1dp" android:color="@color/switchStrokeUnselected" />
+            <corners android:radius="50dp" />
+        </shape>
+    </item>-->
+    <item android:state_checked="false">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/dimen30" />
+            <solid android:color="@color/switchStrokeSelected" />
+            <stroke android:color="@color/white" android:width="1dp"/>
+            <size android:height="@dimen/dimen10" />
+        </shape>
+    </item>
+    <item android:state_checked="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/dimen30" />
+            <solid android:color="@color/white" />
+            <!--            <stroke android:color="#8c8c8c" android:width="1dp"/>-->
+            <size android:height="@dimen/dimen10" />
+        </shape>
+    </item>
+
+</selector>
